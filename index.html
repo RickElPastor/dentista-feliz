@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Consultorio Dental — Dr. Nombre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo">Consultorio <span class="logo-accent">Dental</span></a>
+
+            <nav class="nav" id="nav">
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#agendar">Agendar Cita</a>
+                <a href="#contacto">Contacto</a>
+                <a class="cta" href="tel:+5215555555555">Llámanos</a>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-controls="nav" aria-expanded="false" aria-label="Menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-copy">
+                <h1>Tu sonrisa, nuestra prioridad</h1>
+                <p>Atención dental profesional, cercana y 100% confiable. Especialistas en limpieza, ortodoncia y
+                    estética dental.</p>
+                <div class="hero-ctas">
+                    <a href="#agendar" class="btn btn-primary">Agendar cita en línea</a>
+                    <a href="#servicios" class="btn btn-secondary">Ver servicios</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Sonrisa feliz — Consultorio dental" />
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section class="about" id="nosotros">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dentista profesional">
+            </div>
+            <div class="about-text">
+                <h2>Conoce al Dr. Juan Pérez</h2>
+                <p>Con más de 10 años de experiencia, el Dr. Pérez ofrece atención personalizada con tecnología de
+                    vanguardia.</p>
+                <p><strong>Cédula profesional:</strong> 12345678</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section class="services" id="servicios">
+        <div class="services-container">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="https://img.icons8.com/ios-filled/100/4a90e2/tooth.png" alt="Limpieza dental">
+                    <h3>Limpieza Dental</h3>
+                    <p>Eliminamos sarro y placa para mantener tus dientes sanos.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://img.icons8.com/ios-filled/100/4a90e2/orthodontics.png" alt="Ortodoncia">
+                    <h3>Ortodoncia</h3>
+                    <p>Tratamientos personalizados para alinear tu sonrisa.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://img.icons8.com/ios-filled/100/4a90e2/smile.png" alt="Blanqueamiento">
+                    <h3>Blanqueamiento</h3>
+                    <p>Tratamientos que devuelven el blanco natural a tus dientes.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://img.icons8.com/ios-filled/100/4a90e2/first-aid-kit.png" alt="Emergencias">
+                    <h3>Emergencias Dentales</h3>
+                    <p>Atención inmediata para dolores intensos, fracturas o infecciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📅 SECCIÓN AGENDAR CITA -->
+    <section class="booking" id="agendar">
+        <div class="booking-container">
+            <h2>Agenda tu cita en línea</h2>
+            <p>Selecciona tu fecha y completa el formulario. Te confirmaremos por WhatsApp o teléfono.</p>
+
+            <form class="booking-form" action="https://formspree.io/f/mayvplqe" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono / WhatsApp</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">Fecha de la cita</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="servicio">Servicio</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Selecciona uno</option>
+                        <option value="Limpieza">Limpieza Dental</option>
+                        <option value="Ortodoncia">Ortodoncia</option>
+                        <option value="Blanqueamiento">Blanqueamiento</option>
+                        <option value="Emergencia">Emergencia Dental</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary-1">Confirmar Cita</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section class="contact" id="contacto">
+        <div class="contact-container">
+            <h2>Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><strong>Dirección:</strong><br> Calle Salud 123, Centro, Ciudad Dental</p>
+                    <p><strong>Teléfono:</strong><br> <a href="tel:+5215555555555">+52 1 555 555 5555</a></p>
+                    <p><strong>WhatsApp:</strong><br> <a href="https://wa.me/5215555555555" target="_blank">Enviar
+                            mensaje</a></p>
+                    <p><strong>Horarios:</strong><br> Lunes a Viernes: 9:00–19:00<br> Sábados: 9:00–14:00</p>
+                </div>
+
+                <form class="contact-form" action="https://formspree.io/f/mayvplqe" method="POST">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    <input type="tel" name="telefono" placeholder="Teléfono" required>
+                    <textarea name="mensaje" placeholder="Mensaje o cita" rows="4" required></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.0180790472795!2d-99.133208684558!3d19.432607686883708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzU3LjQiTiA5OcKwMDcnNTguNSJX!5e0!3m2!1ses!2smx!4v1672351234567"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/5215555555555" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Clínica Dental Sonrisa Viva</h3>
+                <p>Atención profesional y humana para cuidar tu sonrisa.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#agendar">Agendar</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook--v1.png" alt="Facebook"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png"
+                        alt="Instagram"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> Clínica Dental Sonrisa Viva. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const nav = document.getElementById('nav');
+        const navToggle = document.getElementById('navToggle');
+        navToggle.addEventListener('click', () => {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+            navToggle.setAttribute('aria-expanded', !expanded);
+            nav.classList.toggle('nav-open');
+        });
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
